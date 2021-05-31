@@ -1,0 +1,37 @@
+/* Navbar */
+.NavBar {
+  height: 100px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  padding: 60px var(--page-horizontal-padding) 15px;
+}
+
+.NavBarItem {
+  flex: 1;
+  text-decoration: none;
+  color: black;
+}
+
+/* Assume max 3 buttons in nav. */
+.NavBarItem:nth-child(1) {
+  text-align: left;
+}
+
+.NavBarItem:nth-child(2) {
+  text-align: center;
+}
+
+.NavBarItem:nth-child(3) {
+  text-align: right;
+}
+
+.NavBarLink {
+  text-decoration: none;
+}
+
+.NavBarTitle {
+  font-weight: 700;
+  font-size: 16px;
+  white-space: nowrap; /* Given flex layout, prevents title from splitting onto two lines. */
+}

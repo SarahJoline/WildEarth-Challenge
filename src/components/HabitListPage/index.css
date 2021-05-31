@@ -1,0 +1,106 @@
+/* PageContent */
+.PageContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.PageContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0px var(--page-horizontal-padding);
+}
+
+.Calendar {
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.DateButton {
+  border-radius: 90px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  font-size: 9px;
+  width: 39px;
+  height: 39px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.DateButton.Active {
+  border-color: var(--pink);
+}
+
+.DateButtonDate {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.emptyHabitList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.HabitList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+
+.Habit {
+  background-color: #dddddd;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 18px;
+  align-items: center;
+  margin: 10px;
+}
+
+.HabitTitle {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+/* Bottom Nav */
+.BottomNav {
+  display: flex;
+  align-items: center;
+}
+
+.BottomNavItem {
+  text-align: center;
+  height: 100%;
+}
+
+.BottomNavItem.Selected {
+  border-bottom: 6px solid var(--pink);
+}
+
+.BottomNavItem:nth-child(1),
+.BottomNavItem:nth-child(3) {
+  flex: 1;
+}
+
+.BottomNavItem:nth-child(2) {
+  width: 58px;
+  padding-bottom: 17px;
+}
+
+.BottomNavItem:nth-child(2) > .BottomNavItemIcon {
+  margin-top: 0px;
+}
+
+.BottomNavItemIcon {
+  margin-top: 10px;
+}

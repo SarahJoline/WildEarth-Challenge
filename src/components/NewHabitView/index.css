@@ -1,0 +1,105 @@
+/* Form Page */
+.Form {
+  padding: 40px var(--page-horizontal-padding);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Container to make form inputs take up height of view at minimum, so next button is pushed to bottom */
+.FormInputs {
+  flex: 1;
+}
+
+.InputGroup {
+  margin-bottom: 32px;
+}
+
+.HorizontalGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.InputTitle {
+  margin-bottom: 10px;
+}
+
+/* Used for displaying inline buttons */
+.ButtonGroup {
+  display: flex;
+}
+
+.OptionButton {
+  padding: 7px 10px;
+  background-color: #dddddd;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  color: rgba(78, 76, 73, 1);
+}
+
+/* Space between consecutive buttons, targets the second button */
+.OptionButton + .OptionButton {
+  margin-left: 8px;
+}
+
+.OptionButton.selected {
+  background: #118ab2;
+  color: white;
+  cursor: default;
+}
+
+/* FrequencySelector - one off component for minus & plus buttons, and number display */
+.FrequencySelector {
+  display: flex;
+  align-items: center;
+}
+
+.FrequencySelectorButton {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.FrequencyValue {
+  display: flex;
+  background: #dfdfdf;
+  border-radius: 10px;
+  width: 32px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 6px;
+  font-size: 18px;
+}
+
+.InputValue {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.InputTextArea {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  padding: 10px;
+  border: 1px solid rgba(56, 56, 56, 0.6);
+  resize: none;
+  outline: none; /* Dont show blue outline on focus */
+}
+
+.SubmitButton {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background: #000000;
+  border-radius: 10px;
+  height: 58px;
+  display: block;
+  width: 100%;
+  border: none;
+}
